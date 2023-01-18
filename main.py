@@ -50,28 +50,50 @@ def vote():
         form = request.form.to_dict()
 
         id = form['idea_id']
+        # add = form['new']
         if not id:
             return redirect('/vote')
-
+        
+        # if add:
+            # return redirect('/voteAdd')
 
         is_updated = False
         for idea in ideas:
             if idea['id'] == id:
-                for vote in idea['votes']:
-                    if vote in form:
-                        idea['votes'][vote] += 1
-                        is_updated = True
-                        break
-                break
+                if 'upvote' in form:
+                    idea['reit'] += 1
+                    is_updated = True
+                elif 'downvote' in form:
+                    idea['reit'] -= 1
+                    is_updated = True
 
         if is_updated:
-            ideas = sorted(ideas, key=lambda k: k['votes']['a'], reverse=True)
-
+            ideas = sorted(ideas, key=lambda k: k['reit'], reverse=True)
             saveIdeasConfig(ideas)
 
         return  redirect('/vote')
 
     return render_template('vote.html', config=getVoteConfig(), ideas=ideas)
+
+@APP.route('/voteAdd', methods=['GET', 'POST'])
+def voteAdd():
+    if request.method == 'POST':
+        form = request.form.to_dict()
+        pprint(form)
+
+        ideas = getIdeasConfig()
+        ideas.append({
+            'id': str(len(ideas) +  1),
+            'name': form['idea'],
+            'description': form['description'],
+            'contact': form['contact'],
+            'reit': 0,
+        })
+        saveIdeasConfig(ideas)
+
+        return redirect('/vote')
+
+    return render_template('vote_add.html', config=getVoteConfig())
 
 @APP.route('/style/<path:path>')
 def send_style(path):

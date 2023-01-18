@@ -1,41 +1,44 @@
 [
     {
+        "id": "2",
+        "name": "#2",
+        "description": "This is the second one",
+        "contact": "123-456-7890",
+        "reit": 30
+    },
+    {
         "id": "1",
         "name": "#1",
         "description": "This is the first one",
         "contact": "123-456-7890",
-        "votes": {
-            "a": 32,
-            "b": 3,
-            "c": 3,
-            "d": 5,
-            "f": 5
-        }
+        "reit": 22
     },
     {
         "id": "3",
         "name": "#2",
         "description": "This is the third one",
         "contact": "123-456-7890",
-        "votes": {
-            "a": 26,
-            "b": 2,
-            "c": 3,
-            "d": 4,
-            "f": 8
-        }
+        "reit": 20
     },
     {
-        "id": "2",
-        "name": "#2",
-        "description": "This is the second one",
-        "contact": "123-456-7890",
-        "votes": {
-            "a": 1,
-            "b": 3,
-            "c": 4,
-            "d": 4,
-            "f": 5
-        }
+        "id": "6",
+        "name": "test3",
+        "description": "test3",
+        "contact": "~",
+        "reit": 7
+    },
+    {
+        "id": 4,
+        "name": "test",
+        "description": "test",
+        "contact": "~",
+        "reit": 0
+    },
+    {
+        "id": 5,
+        "name": "test2",
+        "description": "test2",
+        "contact": "~",
+        "reit": 0
     }
 ]

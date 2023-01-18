@@ -17,6 +17,8 @@
 </head>
 <body>
     <h1>{{config.title}}</h1>
+    <p id="new" onclick="window.location.href = '/voteAdd'">Add new</p>
+    </div>
     {% for idea in ideas %}
         <form method="post" class="form" id="{{idea.id}}">
             <input type="hidden" name="idea_id" value="{{idea.id}}" />
@@ -27,11 +29,11 @@
                 <p>{{idea.description}}</p>
             </div>
             <div class="idea-buttons">
-                {% for vote in idea.votes %}
-                <button type="submit" name="{{vote}}" class="idea-{{vote}}-button">{{vote|upper}}: {{idea.votes[vote]}}</button>
-                {% endfor %}
+                <button type="submit" name="upvote" class="idea-upvote-button">UPVOTE</button>
+                <p>{{idea.reit}}</p>
+                <button type="submit" name="downvote" class="idea-upvote-button">DOWNVOTE</button>
             </div>
         </form>
-        {% endfor %}
+    {% endfor %}
 </body>
 </html>

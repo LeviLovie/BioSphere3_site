@@ -21,8 +21,42 @@ input {
 #submit {
     background: lightgreen;
     border: none;
-    border-radius: 10px 5px;
+    border-radius: 10px;
 }
+
+#new {
+    min-height: calc(100% - 300px);
+    background-color: #eeeeee;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px 0;
+    padding: 5px;
+    height: 30px;
+}
+#new:hover {
+    background-color: #dddddd;
+    transition: 0.2s;
+}
+/*
+.new:hover {
+    background-color: #90F759;
+    transition: 0.2s;
+}
+.new div * {
+    margin: 0 5px;
+}
+.new button {
+    margin: 0 2px;
+    padding: 0 10px;
+    border: none;
+    background-color: #dddddd;
+    border-radius: 10px;
+    height: calc(30px - 10px);
+    position: relative;
+    top: -3px;
+    height: 25px;
+} */
 
 .form {
     min-height: calc(100% - 300px);
@@ -39,8 +73,13 @@ form div * {
 }
 form .idea-buttons {
     position: absolute;
+    display: flex;
+    padding: 5px;
     right: 10px;
     margin: 0 5px;
+}
+form .idea-buttons p {
+    margin: -5px 5px;
 }
 form .idea-buttons button {
     margin: 0 2px;
@@ -55,5 +94,5 @@ form .idea-buttons button {
 }
 form .idea-buttons button:hover {
     background-color: lightgreen;
-    transition: 0.5s;
+    transition: 0.2s;
 }
