@@ -50,12 +50,8 @@ def vote():
         form = request.form.to_dict()
 
         id = form['idea_id']
-        # add = form['new']
         if not id:
             return redirect('/vote')
-        
-        # if add:
-            # return redirect('/voteAdd')
 
         is_updated = False
         for idea in ideas:

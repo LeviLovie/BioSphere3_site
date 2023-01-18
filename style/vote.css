@@ -38,25 +38,6 @@ input {
     background-color: #dddddd;
     transition: 0.2s;
 }
-/*
-.new:hover {
-    background-color: #90F759;
-    transition: 0.2s;
-}
-.new div * {
-    margin: 0 5px;
-}
-.new button {
-    margin: 0 2px;
-    padding: 0 10px;
-    border: none;
-    background-color: #dddddd;
-    border-radius: 10px;
-    height: calc(30px - 10px);
-    position: relative;
-    top: -3px;
-    height: 25px;
-} */
 
 .form {
     min-height: calc(100% - 300px);
