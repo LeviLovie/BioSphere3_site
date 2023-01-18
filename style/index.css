@@ -1,0 +1,37 @@
+html {
+    background-image: url(/static/planets.png);
+    background-size: cover;
+}
+body {
+    min-height: calc(100% - 300px);
+    box-shadow: 0 0 14px -1px rgba(0,0,0,1);
+    background-color: #ffffff;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin: 20px;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+}
+a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #333333;
+    margin: 10px;
+}
+a:hover {
+    color: #666666;
+    transition: 0.5s;
+}

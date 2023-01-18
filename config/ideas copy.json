@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1",
+        "name": "#1",
+        "description": "This is the first one",
+        "contact": "123-456-7890",
+        "votes": {
+            "a": 1,
+            "b": 2,
+            "c": 3,
+            "d": 4,
+            "f": 5
+        }
+    },
+    {
+        "id": "2",
+        "name": "#2",
+        "description": "This is the second one",
+        "contact": "123-456-7890",
+        "votes": {
+            "a": 1,
+            "b": 2,
+            "c": 3,
+            "d": 4,
+            "f": 5
+        }
+    },
+    {
+        "id": "3",
+        "name": "#2",
+        "description": "This is the third one",
+        "contact": "123-456-7890",
+        "votes": {
+            "a": 1,
+            "b": 2,
+            "c": 3,
+            "d": 4,
+            "f": 5
+        }
+    }
+]

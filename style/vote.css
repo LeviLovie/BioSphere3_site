@@ -1,0 +1,59 @@
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+}
+input {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+#submit {
+    background: lightgreen;
+    border: none;
+    border-radius: 10px 5px;
+}
+
+.form {
+    min-height: calc(100% - 300px);
+    background-color: #eeeeee;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px 0;
+    padding: 5px;
+    height: 30px;
+}
+form div * {
+    margin: 0 5px;
+}
+form .idea-buttons {
+    position: absolute;
+    right: 10px;
+    margin: 0 5px;
+}
+form .idea-buttons button {
+    margin: 0 2px;
+    padding: 0 10px;
+    border: none;
+    background-color: #dddddd;
+    border-radius: 10px;
+    height: calc(30px - 10px);
+    position: relative;
+    top: -3px;
+    height: 25px;
+}
+form .idea-buttons button:hover {
+    background-color: lightgreen;
+    transition: 0.5s;
+}
